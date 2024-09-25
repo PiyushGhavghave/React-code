@@ -4,7 +4,7 @@ import profile from '../assets/image.png'
 
 function Card({mydata , hashtag}) {    //destructuring mydata and hashtag
 
-    const {info, btnText = "Default click"} = mydata;  //destructure mydata into-> info and btnText
+    const {info, btnText = "Default click"} = mydata;  //destructure info and btnText from mydata
     return (
         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-slate-200 text-black mb-5">
             <img class="w-full" src={profile} alt="Sunset in the mountains" />
