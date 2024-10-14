@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Person1 from './components/Person1'
+import Person2 from './components/Person2'
 
 function App() {
   // let count = 15;
@@ -27,6 +29,12 @@ function App() {
     <button onClick={decrease}>Decrement</button>
 
     <footer>this is value of counter in footer {count}</footer>
+    <div>
+      <h2 style={{color:'skyblue'}}>Higher Order Component Example</h2>
+      <Person1/>
+      <Person2/>
+      
+    </div>
     </>
   )
 }
