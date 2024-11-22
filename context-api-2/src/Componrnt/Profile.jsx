@@ -4,9 +4,9 @@ import { UserContext } from '../UserContext/UserContextProvider'
 
 function Profile() {
     //consume context
-    const {userdata} = useContext(UserContext)
+    const {userData} = useContext(UserContext)
     return (
-        userdata?.username ? <h2>Welcome! {userdata.username} </h2> : <h2>Please login !...</h2>
+        userData?.username ? <h2>Welcome! {userData.username} </h2> : <h2>Please login !...</h2>
     )
 }
 
