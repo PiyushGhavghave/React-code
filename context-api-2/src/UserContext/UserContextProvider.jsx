@@ -29,8 +29,10 @@ export const UserContext = createContext({
     setUserData : () => {}
 })
 
+//export consumer
 export const useUserContext = () => {
     return useContext(UserContext);
 }
 
+//export provider
 export const ContextProvider = UserContext.Provider;
